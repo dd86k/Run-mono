@@ -8,6 +8,8 @@ namespace Runmono
     {
         private void Init()
         {
+            this.SuspendLayout();
+            
             this.Text = "Run";
             this.HelpButton = true;
             this.ShowIcon = false;
@@ -56,7 +58,7 @@ namespace Runmono
             this.pic.Size = new Size(32, 32);
             this.pic.Image = Image.FromStream(
                 Assembly.GetExecutingAssembly().GetManifestResourceStream("Runmono.serveimage.png")
-            );
+           );
 
             this.Controls.Add(txt);
             this.Controls.Add(run);
@@ -65,6 +67,8 @@ namespace Runmono
             this.Controls.Add(type);
             this.Controls.Add(open);
             this.Controls.Add(pic);
+            
+            this.ResumeLayout(false);
         }
 
         private Button browse;
