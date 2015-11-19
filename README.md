@@ -9,11 +9,11 @@ Don't be shy to check the LICENSE file!
 
 On Linux (Xfce4).
 
-![On Xfce4](http://www.wilomgfx.net/didier/p/run-mono-linux.png)
+![On Xfce4](http://didi.wcantin.ca/p/run-mono-linux.png)
 
 On Windows 8.1.
 
-![On Windows 8](http://www.wilomgfx.net/didier/p/run-mono-win32.png)
+![On Windows 8](http://didi.wcantin.ca/p/run-mono-win32.png)
 
 Note: Mono and .NET are using their own default fonts.
 
@@ -41,7 +41,7 @@ namespace Runmono
             // application message loop on the current 
             // thread, and makes the specified form 
             // visible."
-            Application.Run (new RunFormDesign());
+            Application.Run(new RunFormDesign());
 		}
 	}
 }
